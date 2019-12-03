@@ -1,10 +1,9 @@
 filename = "input.txt"
-result = None
 
 # Read the input
 with open(filename, 'r') as textfile:
     line = textfile.readline().strip("\n")
-    numbers = [int(x) for x in line.split(",")]
+    numbers = list(map(int, line.split(',')))
 
 # Go to state "1202 program alarm"
 numbers[1] = 12
@@ -25,5 +24,4 @@ while i < len(numbers) - 1:
         break
 
 result = numbers[0]
-print(numbers)
 print(result)
