@@ -56,7 +56,6 @@ def task1():
             break
         else:
             break
-    # print("hi",numbers[6])
     return outputs[-1]
 
 print(task1())
